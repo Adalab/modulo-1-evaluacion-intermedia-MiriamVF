@@ -2,3 +2,23 @@ body {
     font-family: 'Rubik', sans-serif;
     La paleta
 }
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 3px var(--color-firered);
+    position: fixed;
+    bottom: 0;
+    /* width: 100vw; */
+    left: 0;
+    right: 0;
+    padding-bottom: 36px;
+}
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
