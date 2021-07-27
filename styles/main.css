@@ -2,36 +2,47 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   box-sizing: border-box;
+  background-color: #3cdbc0;
+  display: flex;
+  justify-content: center;
 }
-.cabecera {
+.header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 30px;
+  padding: 10px 0 3px 0;
   background-color: white;
 }
 .logo {
   width: 155px;
 }
 .menu {
-  width: 155px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-  font-size: 16px;
-  color: #4a4a4a;
-  padding-top: 10px;
-}
-.menu-element2 {
-  padding-left: 20px;
 }
 
-.principal {
-  width: 100vw;
+.menu-element1 {
+  font-size: 16px;
+  color: #4a4a4a;
+  text-decoration: none;
+  padding: 10px;
+}
+.menu-element2 {
+  font-size: 16px;
+  color: #4a4a4a;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.main {
+  width: 8rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,12 +54,14 @@ body {
   color: #ffffff;
   font-size: 30px;
   text-align: center;
+  text-transform: capitalize;
 }
 @media all and (min-width: 768px) {
-  .cabecera {
+  .header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 30px;
+    align-items: center;
+    padding: 20px 20px 20px 30px;
   }
   .text {
     font-size: 40px;
